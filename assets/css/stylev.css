@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+body{margin: 0;padding: 0;font-family: 'Poppins', sans-serif;overflow-x: hidden;}
+/* navbar */
+header{top: 0;position: sticky;max-width: 1300px;margin: 15px auto;padding: 10px;background: #009FFF;box-sizing: border-box;border-radius: 4px;box-shadow: 0 2px 5px rgba(0, 0, 0, .2);z-index: 3;}
+.logo{color: #fff;height: 50px;font-size: 20px;line-height: 60px;padding: 0 20px;text-align: center;box-sizing: border-box;float: left;font-weight: 700;text-decoration: none;}
+.logo img{width: 60px;}
+nav{float: right;}
+.clearfix{clear: both;}
+nav ul{margin: 0;padding: 0;display: flex;}
+nav ul li{list-style: none;}
+nav ul li a{display: block;margin: 10px 0;padding: 10px 20px;text-decoration: none;color: #fff;}
+nav ul li a:hover{color: #ddd;transition: 0.25s ease-in-out;}
+.a-active{background: #fff;border-radius: 5px;color: #009EFF;font-weight: 700;box-shadow: 0 2px 5px rgba(0, 0, 0, .2);}
+.a-active:hover{background: #009EFF;color: #fff;transition: 0.25s ease-in-out;}
+.menu-toggle{display: none;}
+@media (max-width: 1300px){header{margin: 15px;}}
+@media (max-width: 768px){
+    .menu-toggle{display: block;width: 40px;height: 40px;margin: 10px;background: #fff;border-radius: 5px;float: right;cursor: pointer;text-align: center;font-size: 30px;color: #009EFF;}
+    .menu-toggle::before{content: '';line-height: 40px;}
+    nav{display: none;}
+    nav.active{display: block;width: 100%;}
+    nav.active ul{display: block;}
+    nav.active ul li a{margin: 0;}
+}.nav{width: 100%;margin: 15px auto;padding: 10px;margin-top: -20px;background: #0980ca;box-sizing: border-box;border-radius: 4px;box-shadow: 0 2px 5px rgba(0, 0, 0, .2);}
+.nav ul{display: flex;justify-content: center;}
+.nav ul li{list-style: none;}
+.nav ul li a{margin: 10px 0;padding: 10px 20px;text-decoration: none;color: #fff;}
+.nav ul li a:hover{color: #ddd;transition: 0.25s ease-in-out;}
+/* navbar */
+/* landing page */
+.banner{position: relative;width: 100%;min-height: 80vh;padding: 0 10px;display: flex;justify-content: flex-start;align-items: center;}
+.banner .textBox{position: relative;max-width: 550px;padding-left: 50px;z-index: 2;}
+.banner .textBox h2{color: #000;font-size: 3em;}
+.banner .textBox p{color: #000;font-size: 1.1em;margin: 5px 0 25px;}
+.banner .textBox a{position: relative;display: inline-block;background: #009FFF;color: #fff;padding: 10px 15px;border-radius: 5px;font-size: 16px;text-transform: uppercase;letter-spacing: 1px;font-weight: 700;text-decoration: none;transition: 0.25s ease-in-out;box-shadow: 10px 10px 10px rgba(0, 0, 0, .2);}
+.textBox a:hover{background-color: rgb(12, 132, 206);border-radius: 40px;}
+.banner .videoBox{position: relative;background: #000;margin-left: 40px;width: 100%;height: 400px;z-index: 1;}
+@media (max-width: 768px){
+    .banner{flex-wrap: wrap;min-height: 110vh;}
+    .banner .textBox{text-align: center;padding-left: 0;padding: 10px;}
+    .banner .videoBox{text-align: center;margin-top: 20px;margin-left: 0;padding: 10px;width: 93%;}
+}/* landing page */ /* halaman index */ /* tentang */
+#tentang{position: relative;width: 100%;height: 100vh;background-color: #009EFF;}
+#tentang h4{padding-top: 50px;color: #000;text-transform: uppercase;letter-spacing: 1px;font-size: 40px;font-weight: 700;text-align: center;}
+.bg-tentang{text-align: center;margin: auto;}
+.bg-tentang img{width: 150px;height: 150px;transition: 0.25s ease-in-out;cursor: pointer;}
+.bg-tentang img:hover{transform: scale(1.1);}
+.tentang-box{display: flex;justify-content: flex-start;padding: 40px}
+.textBox1{padding: 20px;margin-top: -20px;text-align: justify;transition: 0.25s ease-in-out;}
+.textBox2{padding: 20px;margin-top: -20px;text-align: justify;}
+.textBox1 p,.textBox2 p{transition: 0.25s ease-in-out;cursor: none;}
+.textBox1 p:hover,.textBox2 p:hover{background-color: #fff;color: #009EFF;padding: 20px;border-radius: 5px;margin-top: -150px;transform: scale(1.1);}
+/* tentang */ /* produk */
+#produk{position: relative;width: 100%;height: 120vh;margin: 0;padding: 0;}
+#produk h4{padding-top: 50px;color: #000;text-transform: uppercase;letter-spacing: 1px;font-size: 40px;font-weight: 700;text-align: center;}
+.box-kg{background-color: #009EFF;margin: 20px;padding: 20px;border-radius: 5px;width: 60%;text-align: center;box-shadow: 10px 10px 10px rgba(0, 0, 0, .2);}
+.box-kg button{background: none;border: 0;padding: 10px;font-size: 16px;text-align: center;color: #fff;cursor: pointer;border-radius: 5px;font-weight: 500;transition: 0.25s ease-in-out;}
+.box-kg button:hover{background-color: #fff;color: #009EFF;box-shadow: 10px 10px 10px rgba(0, 0, 0, .2);}
+.cards-container{margin: 20px;padding: 20px;display: flex;justify-content: start;align-items: center;max-width: 1300px;}
+.cards{display: flex;justify-content: start;align-items: center;max-width: 1300px;margin-left: -40px;margin-right: 40px;}
+.card{width: 250px;margin: 0 20px 0 20px;background-color: #009EFF;border-radius: 5px;transition: 0.25s ease-in-out;box-shadow: 10px 10px 10px rgba(0, 0, 0, .2);}
+.card:hover{transform: scale(1.1);}
+.card-container img{width: 250px;border-top-left-radius: 5px;border-top-right-radius: 5px;}
+.details{color: #fff;padding: 15px;}
+.details h3{margin-top: -10px;}
+.details p{margin-top: -10px;line-height: 20px;}
+.form-daftar{width: 100%;padding: 20px;background-color: #009EFF;border-radius: 5px;box-shadow: 10px 10px 10px rgba(0, 0, 0, .2);}
+.form-daftar h3{text-align: center;color: #fff;font-size: 24px;letter-spacing: 1px;}
+.form-daftar p{text-align: center;color: #fff;font-size: 14px;}
+.form-daftar a{color: #fff;font-size: 14px;transition: 0.25s ease-in-out;}
+.form-daftar a:hover{color: #ddd;}
+.form-group-pd{width: 350px;text-align: center;}
+.form-group-pd input{margin: 10px;padding: 10px;width: 80%;border: 0;border-radius: 5px;text-align: center;outline: none;transition: 0.25s ease-in-out;}
+.form-group-pd input:focus{border-radius: 40px;}
+.form-group-pd button{margin: 10px;padding: 10px;border: 0;border-radius: 5px;text-align: center;outline: none;color: #009EFF;cursor: pointer;font-size: 16px;font-weight: 700;background-color: #fff;transition: 0.25s ease-in-out;box-shadow: 10px 10px 10px rgba(0, 0, 0, .2);}
+.form-group-pd button:hover{border-radius: 40px;background-color: #ddd;}
+/* produk */ /* solusi */
+#solusi{position: relative;width: 100%;height: 100vh;margin: 0;padding: 0;background-image: url(../img/bg-solusi.jpg);background-size: cover;background-repeat: no-repeat;}
+#solusi h4{padding-top: 50px;color: #fff;text-transform: uppercase;letter-spacing: 1px;font-size: 40px;font-weight: 700;text-align: center;}
+.card-sl{margin: 15px;padding: 15px;/* background-color: #fff; *//* border-radius: 5px; */border-radius: 140px;color: #fff;text-align: center;transition: 0.25s ease-in-out;cursor: pointer;}
+.card-sl:hover{background-color: #fff;border-radius: 5px;color: #000;}
+.card-sl-image img{width: 250px;height: 250px;border-radius: 140px;}
+/* solusi */ /* kontak */
+#kontak{position: relative;width: 100%;height: 110vh;margin: 0;padding: 0;}
+#kontak h4{padding-top: 50px;text-transform: uppercase;letter-spacing: 1px;font-size: 40px;font-weight: 700;text-align: center;}
+.kontak-b-1{margin: auto;line-height: 50px;text-align: center;}
+.kontak-b-1 p{font-size: 18px;font-family: "Poppins", sans-serif;}
+.form-group input,.form-group textarea{width: 300px;border-radius: 10px;border: 0;padding: 0 15px;box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.308);margin: 10px 0;font-size: 16px;font-family: "Poppins", sans-serif;resize: none; outline: none;transition: 0.25s ease-in-out;}
+.form-group input{height: 40px;}
+.form-group input:focus,.form-group textarea:focus{width: 350px;}
+.form-group button{padding: 10px 20px;border-radius: 10px;background-color: #14ADEA;border: 0;box-shadow: 10px 10px 10px rgba(0, 0, 0, .2);margin: 10px 0;outline: hidden;font-size: 18px;font-weight: bold;color: #fff;cursor: pointer;letter-spacing: 0;font-family: "Poppins", sans-serif;transition: 0.25s ease-in-out;letter-spacing: 1px;}
+.form-group button:hover{background-color: rgb(14, 137, 185);border-radius: 40px;}
+.kontak-b-2 img{width: 500px;height: 500px;float: right;display: block;}
+@media(max-width: 580px){
+    .kontak{height: 80vh;}
+    .kontak-b-2 img{display: none;}
+    .form-group input:hover,.form-group textarea:hover{width: 250px;}
+}/* kontak */ /* footer */
+footer{width: 100%;text-align: center;}
+.text-footer p{font-size: 14px;display: inline-block;}
+.italic{font-style: italic;}
+/* footer */
+.btn-dispose{margin-left: 5px;background: none;border: 0;cursor: pointer;color: #000;font-weight: 700;border-radius: 5px;transition: 0.25s ease-in-out;}
+.btn-dispose:hover{background-color: #009EFF;color: #fff;}
+.pesan-sukses p{color: green;font-size: 14px;}
+.pesan-gagal p{color: red;font-size: 14px;}
+.pesan-bahaya p{color: #b1b110;font-size: 14px;}
+/* auth */ /* halaman masuk */ /* masuk */
+#masuk{position: relative;width: 100%;height: 80vh;margin: 0;padding: 0;}
+#masuk h4{padding-top: 50px;text-transform: uppercase;letter-spacing: 1px;font-size: 40px;font-weight: 700;text-align: center;}
+#masuk p{text-align: center;}
+#masuk a{color: #009EFF;text-decoration: none;cursor: pointer;transition: 0.25s ease-in-out;}
+#masuk a:hover{color: #1580aa;font-weight: 700;}
+.form-auth .form-group-pd{margin: auto;text-align: center;align-items: center;}
+/* masuk */ /* daftar */
+#daftar{position: relative;width: 100%;height: 90vh;margin: 0;padding: 0;}
+#daftar h4{padding-top: 50px;text-transform: uppercase;letter-spacing: 1px;font-size: 40px;font-weight: 700;text-align: center;}
+#daftar p{text-align: center;}
+#daftar a{color: #009EFF;text-decoration: none;cursor: pointer;transition: 0.25s ease-in-out;}
+#daftar a:hover{color: #1580aa;font-weight: 700;}
+#daftar form{width: 400px;margin: auto;text-align: center;align-items: center;}
+/* daftar */ /* halaman dashboard */
+.sambutan{margin: 10px;padding: 10px;margin-left: 45px;margin-bottom: -50px;}
+.sambutan h1{font-size: 24px;}
+.card-data{padding: 0 20px;width: 250px;margin: 0 20px 0 20px;background-color: #009EFF;border-radius: 5px;transition: 0.25s ease-in-out;box-shadow: 10px 10px 10px rgba(0, 0, 0, .2);}
+.card-data:hover{transform: scale(1.1);}
+.card-data h5{font-size: 16px;color: #fff;margin-top: 0;padding-top: 10px;}
+.card-data-container{margin-top: -20px;display: flex;justify-content: space-between;align-items: center;}
+.jumlah-data{color: #fff;font-size: 32px;font-weight: 700;letter-spacing: 1px;}
+.card-data-container i{color: #fff;font-size: 32px;}
+.card-data button{color: #fff;font-size: 14px;background: none;border: 0;cursor: pointer;outline: none;transition: 0.25s ease-in-out;}
+.card-data button:hover{color: #ddd;}
+#users{position: relative;margin: auto; text-align: center; width: 100%;align-items: center;}
+#users h4{font-size: 27px;}
+#users table{text-align: center;margin: auto;}
+.btn-warning{background-color: #ecec14;border: 0;font-size: 16px;font-weight: bold;color: #000000;padding: 10px;transition: 0.25s ease-in-out;cursor: pointer;border-radius: 5px;}
+.btn-warning:hover{background-color: #c4c404;}
+.btn-danger{background-color: #ec1414;border: 0;font-size: 16px;font-weight: bold;color: #ffffff;padding: 10px;transition: 0.25s ease-in-out;cursor: pointer;border-radius: 5px;}
+.btn-danger:hover{background-color: #c40404;}
+.btn-success{background-color: #29db12;border: 0;font-size: 16px;font-weight: bold;color: #ffffff;padding: 10px;transition: 0.25s ease-in-out;cursor: pointer;border-radius: 5px;}
+.btn-success:hover{background-color: #04c424;}
+#produk-admin{position: relative;margin: auto; text-align: center; width: 100%;align-items: center;}
+#produk-admin h4{font-size: 27px;}
+#produk-admin table{text-align: center;margin: auto;}
+#penjualan{position: relative;margin: auto; text-align: center; width: 100%;align-items: center;}
+#penjualan h4{font-size: 27px;}
+#penjualan table{text-align: center;margin: auto;}
+#kontak-admin{position: relative;margin: auto; text-align: center; width: 100%;align-items: center;}
+#kontak-admin h4{font-size: 27px;}
+#kontak-admin table{text-align: center;margin: auto;}
+.d-flex{display: flex;}
+.pembelian{margin: 0 20px;margin-bottom: 15px;}
+.pembelian p{margin: auto;color: #fff;}
+.cart-container{position: relative; width: 90%;margin: auto;}
+.card-keranjang{margin-bottom: 20px;}
+.card-checkout{margin: auto;}
+.card-checkout input{background-color: #ddd;}
+#data-checkout{position: relative;margin: auto; text-align: center; width: 100%;align-items: center;}
+#data-checkout h4{font-size: 27px;}
+#data-checkout table{text-align: center;margin: auto;}
+#masukan-jadwal{position: relative;margin: auto; text-align: center; width: 100%;align-items: center;}
+#masukan-jadwal h4{font-size: 27px;}
+#masukan-jadwal form{width: 350px;margin: auto; margin-bottom: 50px;background-color: #009EFF;border-radius: 5px;padding: 10px 0;}
+.f-edit label{color: #fff;}
+.f-edit input{background-color: #ddd;border-radius: 5px;}
+#data-jadwal{position: relative;margin: auto; text-align: center; width: 100%;align-items: center;}
+#data-jadwal h4{font-size: 27px;}
+#data-jadwal table{text-align: center;margin: auto;}
+#masukan-catatan{position: relative;margin: auto; text-align: center; width: 100%;align-items: center;}
+#masukan-catatan h4{font-size: 27px;}
+#masukan-catatan form{width: 350px;margin: auto; margin-bottom: 50px;background-color: #009EFF;border-radius: 5px;padding: 10px 0;}
+.f-edit textarea{width: 280px; padding: 10px; border: none;background-color: #ddd;border-radius: 5px; resize: none;outline: none;}
+#data-catatan{position: relative;margin: auto; text-align: center; width: 100%;align-items: center;}
+#data-catatan h4{font-size: 27px;}
+#data-catatan table{text-align: center;margin: auto;}
+#masukan-produk{position: relative;margin: auto; text-align: center; width: 100%;align-items: center;}
+#masukan-produk h4{font-size: 27px;}
+#masukan-produk form{width: 350px;margin: auto; margin-bottom: 50px;background-color: #009EFF;border-radius: 5px;padding: 10px 0;}
+.f-edit select{width: 300px;background-color: #ddd;border-radius: 5px;padding: 10px;outline: none;}
+#data-produk{position: relative;margin: auto; text-align: center; width: 100%;align-items: center;}
+#data-produk h4{font-size: 27px;}
+#data-produk table{text-align: center;margin: auto;}
+#masukan-penjualan{position: relative;margin: auto; text-align: center; width: 100%;align-items: center;}
+#masukan-penjualan h4{font-size: 27px;}
+#masukan-penjualan form{width: 350px;margin: auto; margin-bottom: 50px;background-color: #009EFF;border-radius: 5px;padding: 10px 0;}
+#data-penjualan{position: relative;margin: auto; text-align: center; width: 100%;align-items: center;}
+#data-penjualan h4{font-size: 27px;}
+#data-penjualan table{text-align: center;margin: auto;}
+#masukan-checkout{position: relative;margin: auto; text-align: center; width: 100%;align-items: center;}
+#masukan-checkout h4{font-size: 27px;}
+#masukan-checkout form{width: 350px;margin: auto; margin-bottom: 50px;background-color: #009EFF;border-radius: 5px;padding: 10px 0;}
+#data-laporan{position: relative;margin: auto; text-align: center; width: 100%;align-items: center;}
+#data-laporan h4{font-size: 27px;}
+#data-laporan table{text-align: center;margin: auto;}
+#masukan-users{position: relative;margin: auto; text-align: center; width: 100%;align-items: center;}
+#masukan-users h4{font-size: 27px;}
+#masukan-users form{width: 350px;margin: auto; margin-bottom: 50px;background-color: #009EFF;border-radius: 5px;padding: 10px 0;}
