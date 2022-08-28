@@ -55,10 +55,10 @@
                     <h4>Produk</h4>
                     <div class="box-kg">
                         <form action="" method="POST">
-                            <?php foreach($kategori as $row):?>
+                            <?php while($row=mysqli_fetch_assoc($kategori)){?>
                             <input type="hidden" name="id-kategori" value="<?= $row['id_kategori']?>">
                             <button type="submit" name="liat-kategori" class="btn-kg"><?= $row['nama_kategori']?></button>
-                            <?php endforeach;?>
+                            <?php }?>
                         </form>
                     </div>
                     <div class="cards-container">
